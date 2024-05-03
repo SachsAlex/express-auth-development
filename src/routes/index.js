@@ -7,6 +7,5 @@ const AppRouter = Router();
 
 AppRouter.use("/auth", AuthRouter);
 AppRouter.use("/users", authMiddleWare, UserRouter);
-AppRouter.use("/users", UserRouter);
 
 module.exports = { AppRouter };
